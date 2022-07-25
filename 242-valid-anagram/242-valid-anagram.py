@@ -14,7 +14,7 @@ class Solution:
             else:
                 data_t[i]+=1
         
-        if len(s) == len(t) and data_s == data_t:
+        if data_s == data_t:
             return True
         return False
                 
