@@ -10,9 +10,9 @@ class Solution:
         data_t = {}
         for i in t:
             if i not in data_t:
-                data_t[i]=0
-                continue
-            data_t[i]+=1
+                data_t[i]=0   
+            else:
+                data_t[i]+=1
         
         if data_s == data_t:
             return True
