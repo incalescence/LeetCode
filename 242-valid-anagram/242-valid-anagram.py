@@ -16,7 +16,8 @@ class Solution:
         
         if data_s == data_t:
             return True
-        return False
+        else:
+            return False
                 
             
         
