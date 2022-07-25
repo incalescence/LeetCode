@@ -1,5 +1,5 @@
-class Solution:
-    def singleNumber(self, nums: List[int]) -> int:
+class Solution(object):
+    def singleNumber(self, nums):
         freq = {}
         for num in nums:
             if num not in freq:
@@ -7,7 +7,4 @@ class Solution:
             else:
                 freq[num] += 1
         return min(freq, key=freq.get)
-                
-                
-            
         
