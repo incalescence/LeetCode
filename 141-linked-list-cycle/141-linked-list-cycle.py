@@ -6,7 +6,7 @@
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
-        visited : List[ListNode] = []
+        visited = []
         while (head) :
             if (head in visited):
                 return True
