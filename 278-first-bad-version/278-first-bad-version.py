@@ -6,7 +6,7 @@ class Solution:
         high = n-1
         low = 0
         while(low <= high):
-            mid = int(low + (high - low)/2)
+            mid = low + (high - low)//2
             if isBadVersion(mid) != True:
                 low = mid + 1
             else:
