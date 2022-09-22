@@ -4,5 +4,22 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        count = sum([(x//2) * 2 for x in Counter(s).values()])
-        return count if count == len(s) else (count + 1)
+        s_dict = Counter(s)
+        
+        longest_palindrome = 0
+        # even case add all even and add odd -1 
+        for value in s_dict.values():
+            longest_palindrome += value
+            if (value%2==1):
+                longest_palindrome -= 1
+        
+        if longest_palindrome + 1 <= len(s):
+            return (longest_palindrome + 1)
+        
+        else: 
+            return longest_palindrome
+            
+        
+        
+        
+        
