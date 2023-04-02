@@ -16,9 +16,9 @@ class Solution:
                     else:
                         prefix = prefix[0:j]
                     break
-                if j == len(strs[i])-1:
-                    prefix = strs[i]
-                    break
+                # if j == len(strs[i])-1:
+                #     prefix = strs[i]
+                #     break
         return prefix
 
             
