@@ -4,7 +4,7 @@
 ✅Palindrome Number \
 ✅Roman to Integer \
 ✅Longest Common Prefix \
-Valid Parentheses \
+✅Valid Parentheses \
 ✅Merge Two Sorted Lists \
 ✅Remove Duplicates from Sorted Array \
 ✅Implement strStr() \
