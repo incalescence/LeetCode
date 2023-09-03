@@ -9,6 +9,6 @@ class Solution(object):
         for i in range(1,len(prices)):
             if prices[i] < buy:
                 buy = prices[i]
-            else:
-                max_profit = max(max_profit, prices[i]-buy)
+                continue
+            max_profit = max(max_profit, prices[i]-buy)
         return max_profit
